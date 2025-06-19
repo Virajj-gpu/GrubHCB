@@ -1,156 +1,180 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viraj</title>
-    <link rel="icon" type="image/png" href="Gay man.jpg" sizes="32x32" />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-900 text-blue-100 font-sans text-sm">
-    <nav class="bg-green-900 text-yellow-500 p-2 old-style-border">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My favourite dishes !!</title>
+    <meta
+      name="description"
+      content="A beginner-friendly blog with articles about learning programming, UX design, and Tailwind CSS."
+    />
+    <link rel="icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=VT323&display=swap');
+      body, h1, h3, p {
+        font-family: "Edu NSW ACT Hand Pre", cursive;
+      }
+      h2 {
+        font-family: "VT323", monospace;
+      }
+    </style>
+  </head>
+
+  <body class="bg-red-900 text-gray-100 font-sans leading-relaxed flex flex-col min-h-screen">
+    <nav class="bg-red-800 text-blue-300 p-2 old-style-border">
       <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-3xl font-bold text-red-600">Games That I Love !!</h1>
+        <h1 class="text-3xl font-bold text-blue-400">Foods That are YUMMMM !!</h1>
         <ul class="flex space-x-2">
           <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#Games" class="hover:underline">Games</a></li>
+          <li><a href="#foods" class="hover:underline">Foods</a></li>
           <li><a href="#reviews" class="hover:underline">Reviews</a></li>
-          <li><a href="#about" class="hover:underline">About Me</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
           <li><a href="#faq" class="hover:underline">FAQ</a></li>
         </ul>
       </div>
     </nav>
-
-<button id="backToTop"
-        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-        class="hidden fixed bottom-4 left-4 bg-yellow-500 text-black px-3 py-2 rounded shadow-lg hover:bg-yellow-400 transition duration-300 ease-in-out">
-  ↑ Top
-</button>
-
-    <section class="container mx-auto px-4 py-12 text-center old-style-border mt-6 mb-10">
-      <h2 class="text-5xl font-bold text-red-600 mb-4">Gaming</h2>
-      <p class="text-2xl">Gaming is hobby for some people, but for me That's my bloody passion !!</p>
-      <img
-        src="https://imgs.search.brave.com/ptHE5awrcf3A1ovf0LXCCqCHNlO8pXxExKNlbew3qN0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/emVra2VuLWZhbmFy/dC12MC1tbXUyZ2Fi/dWI1dmMxLnBuZz93/aWR0aD02NDAmY3Jv/cD1zbWFydCZhdXRv/PXdlYnAmcz1jODg0/NTY5ZWVlZmFjNzc1/YjdmNTkyODgzY2Yz/ZjZjZWEzNWZmZThk"
-        alt="Zekken (Valorant palyer)"
-        class="mx-auto rounded shadow-lg w-60 h-80 object-cover border-4 border-cyan-300"
-      />
-    </section>
-
-    <section id="Games" class="container mx-auto px-4 py-12 text-center old-style-border mt-6 mb-10">
-      <h3 class="text-4xl font-bold text-red-600 mb-4">Games !!</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="product-card bg-green-700 p-4 rounded shadow-md old-style-border">
-          <img src="valorant.jpg" alt="Valorant" class="rounded mb-2 w-full h-60 object-cover" />
-          <h4 class="text-2xl font-bold text-cyan-400">Valorant</h4>
-          <p class="italic">"For the fun with friends"</p>
-        </div>
-        <div class="product-card bg-green-700 p-4 rounded shadow-md old-style-border">
-          <img src="cs2.webp" alt="Counter Strike 2" class="rounded mb-2 w-full h-60 object-cover" />
-          <h4 class="text-2xl font-bold text-cyan-400">Counter Strike 2</h4>
-          <p class="italic">"The ultimate team-based shooter!"</p>
-        </div>
-        <div class="product-card bg-green-700 p-4 rounded shadow-md old-style-border">
-          <img src="Minecraft.jpg" alt="Minecraft" class="rounded mb-2 w-full h-60 object-cover" />
-          <h4 class="text-2xl font-bold text-cyan-400">Minecraft</h4>
-          <p class="italic">"Unleash this creativity"</p>
-        </div>
-        <div class="product-card bg-green-700 p-4 rounded shadow-md old-style-border">
-          <img src="God_of_war.jpg" alt="Minecraft" class="rounded mb-2 w-full h-60 object-cover" />
-          <h4 class="text-2xl font-bold text-cyan-400">God Of War</h4>
-          <p class="italic">"Become the god No one wants, but everyone needs !!"</p>
-        </div>
-        <div class="product-card bg-green-700 p-4 rounded shadow-md old-style-border">
-          <img src="Uncharted.jpg" alt="Uncharted" class="rounded mb-2 w-full h-60 object-cover" />
-          <h4 class="text-2xl font-bold text-cyan-400">Uncharted</h4>
-          <p class="italic">"Join Nathan Drake in an epic adventure!"</p>
-        </div>
-        <div class="product-card bg-green-700 p-4 rounded shadow-md old-style-border">
-          <img src="last_of_us.jpg" alt="Last Of Us" class="rounded mb-2 w-full h-60 object-cover" />
-          <h4 class="text-2xl font-bold text-cyan-400">Last Of Us</h4>
-          <p class="italic">"Experience a gripping story of survival."</p>
-        </div>
+    <header class="bg-red-800 shadow sticky top-0 z-10">
+      <div class="max-w-7xl mx-auto px-4 py-6">
+        <h1 class="text-3xl font-bold text-center">
+         My Favourite Foods !!
+        </h1>
       </div>
-    </section>
+    </header>
 
-    <section id="reviews" class="bg-green-8000 text-black py-10 old-style-border mb-12">
-      <div class="container mx-auto px-4 text-center">
-        <h3 class="text-4xl text-white font-semibold mb-8 text-shadow-[0_35px_35px_rgb(0_0_0_/_0.25)]">Reviews on these games !!</h3>
-        <div class="grid md:grid-cols-3 gap-4">
-          <blockquote class="bg-gray-800 text-blue-100 p-4 rounded shadow-md border border-blue-400">
-            "Valorant is a game that requires skill, strategy, and teamwork. It's a game that keeps you on your toes and makes you think." – Zekken
-          </blockquote>
-          <blockquote class="bg-gray-800 text-pink-200 p-4 rounded shadow-md border border-pink-400">
-            "Counter Strike 2 is a game that has stood the test of time. It's a game that brings people together and creates unforgettable moments." – CS2 Pro
-          </blockquote>
-          <blockquote class="bg-gray-800 text-green-200 p-4 rounded shadow-md border border-green-400">
-            "Minecraft is a game that allows you to unleash your creativity. It's a game that lets you build, explore, and create your own world." – Minecraft Fan
-          </blockquote>
-          <blockquote class="bg-gray-800 text-red-200 p-4 rounded shadow-md border border-red-400">
-            "God Of War is a game that redefines storytelling in video games. It's a game that takes you on an emotional journey." – Kratos
-          </blockquote>
-          <blockquote class="bg-gray-800 text-yellow-200 p-4 rounded shadow-md border border-yellow-400">
-            "Uncharted is a game that combines action, adventure, and storytelling in a way that few games can. It's a must play for any gamer." – Nathan Drake
-          </blockquote>
-          <blockquote class="bg-gray-800 text-orange-200 p-4 rounded shadow-md border border-orange-400">
-            "Last Of Us is a game that explores the depths of human emotion. It's a game that will stay with you long after you've finished playing." – Joel
-          </blockquote>
+    <main class="max-w-7xl mx-auto px-4 py-10">
+      <section id="#" class="mb-10">
+        <p class="text-white mb-4 text-2xl">Food !! Often seen as a source for energy, is more than that to me ! Kind of like love to me !! It gives me joy and helps me enjoy my days even when I'm sad or down !!</p>
+      </section>
+
+      <section id="foods" class="mb-10">
+        <h2 class="text-6xl font-bold mb-6">My Favourite Foods</h2>
+        <p class="text-blue-300 mb-4"><b>These are the best foods (according to me OBV)</b></p>
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+        <a data-aos="fade-up" class="block bg-yellow-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h2 class="text-xl font-semibold mb-4"><u>Biryani</u></h2>
+          <img src="https://imgs.search.brave.com/C3USKn-5OcdCo9QgmygFx-_xEksoXlEig6I1wZ8AHJU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvNDcz/OTY2MDY4L3N0b2Nr/LXBob3RvLWNoaWNr/ZW4tYmlyeWFuaS1r/ZXJhbGEtc3R5bGUt/Y2hpY2tlbi1kaHVt/LWJpcml5YW5pLW1h/ZGUtdXNpbmctamVl/cmE" alt="Biryani" class="w-full h-48 object-cover rounded mb-4" />
+          <p class="text-gray-300">The Best !! The OG !! The never replaceable BIRYANI !!</p>
+        </a>
+
+        <a data-aos="fade-up" class="block bg-yellow-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h2 class="text-xl font-semibold mb-4"><u>CHICKEN CURRY</u></h2>
+          <img src="https://imgs.search.brave.com/xOaAZK6GKZL6NKYr69FCYId3bwV0B3vnpCvCaXDWgQA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzE3LzMwLzM4/LzM2MF9GXzIxNzMw/Mzg5Nl84Nm9vTkNV/RTRGVU1oNDVManhr/NFF4UGhFeHdyZHRL/Yi5qcGc" alt="Chicken Curry" class="w-full h-48 object-cover rounded mb-4" />
+          <p class="text-gray-300">India's favourite chicken dish CHICKEN CURRY !!</p>
+        </a>
+
+        <a data-aos="fade-up" class="block bg-yellow-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h2 class="text-xl font-semibold mb-4"><u>Kebab</u></h2>
+          <img src="https://imgs.search.brave.com/BmA0OJMItI7f7FgDdCVKpPOaobLmbEu7y0nkh0_nQGY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbGF0/Zm9ybS5sYS5lYXRl/ci5jb20vd3AtY29u/dGVudC91cGxvYWRz/L3NpdGVzLzI2L2No/b3J1cy91cGxvYWRz/L2Nob3J1c19hc3Nl/dC9maWxlLzIzMzA3/Mzc2L0R2aW5fTWVh/dF9NYXJrZXRfS2Vi/YWJzX18xXy5qcGc_/cXVhbGl0eT05MCZz/dHJpcD1hbGwmY3Jv/cD0wLDUuNTQ1Njcw/MjI1Mzg1NSwxMDAs/ODguOTA4NjU5NTQ5/MjI5Jnc9MjQwMA" alt="Kebab" class="w-full h-48 object-cover rounded mb-4" />
+          <p class="text-gray-300">The life of lucknow, The Kebabs !!</p>
+        </a>
+
+        <a data-aos="fade-up" class="block bg-yellow-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h2 class="text-xl font-semibold mb-4"><u>Aloo Paratha</u></h2>
+          <img src="https://imgs.search.brave.com/pHgsnyG_6EJui1eeCr3TwIr2502u5seiNrKlaswRUmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI1/MTM0MDgxOC9waG90/by9hbG9vLXBhcmF0/aGEtb3Itc3R1ZmZl/ZC1wb3RhdG8tZmxh/dGJyZWFkLXdpdGgt/Y3VyZC1hbmQtd2hp/dGUtYnV0dGVyLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1V/STI1TENGcnlHLW1S/MFQyeUZoby0yV0F2/NUZjN1dWMEF1UGZ1/eUxsSTMwPQ" alt="Aloo Paratha" class="w-full h-48 object-cover rounded mb-4" />
+          <p class="text-gray-300">Indian Mom's favorite for their children, Aloo de Parothe !!</p>
+        </a>
+
+        <a data-aos="fade-up" class="block bg-yellow-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h2 class="text-xl font-semibold mb-4"><u>Litti Chokha</u></h2>
+          <img src="https://imgs.search.brave.com/Pc0GSNtya9PPRd5mJRlkHEi34xno1LAc2V9fpeazOOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9waWN0/dXJlLWxpdHRpLWNo/b2toYS1zZWxlY3Rl/ZC1mb2N1cy0xOTQ1/MDI5OTkuanBn" alt="Litti Chokha" class="w-full h-48 object-cover rounded mb-4" />
+          <p class="text-gray-300">Bihar's famous dish, The OG Litti Chokha !!</p>
+        </a>
+      </div>
+      <section/>
+      <section id="reviews" class="mb-10">
+        <h2 class="text-6xl font-bold mb-6">Reviews</h2>
+        <p class="text-blue-400 mb-3"><b>These are the reviews I got about my favourite foods !!</b></p>
+        <div class="space-y-4">
+          <div class="bg-pink-700 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold"><u>Biryani</u></h3>
+            <p class="text-green-300">"Biryani is the best food I've ever had! The flavors are so full ! NGL the top one !!"</p>
+          </div>
+          <div class="bg-pink-700 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold"><u>Chicken Curry</u></h3>
+            <p class="text-green-300">"Chicken curry is a banger really. It just need to be perfectly spicy and juicy !"</p>
+          </div>
+          <div class="bg-pink-700 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold"><u>Kebab</u></h3>
+            <p class="text-green-300">"The kebabs are really the one of a kind to die for! Perfectly grilled ummmaah !"</p>
+          </div>
+          <div class="bg-pink-700 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold"><u>Aloo Paratha</u></h3>
+            <p class="text-green-300">"Aloo paratha is my comfort food. Always kills the hunger and best paired with curd !!"</p>
+          </div>
+          <div class="bg-pink-700 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold"><u>Litti Chokha</u></h3>
+            <p class="text-green-300">"The OG Litti Chokha. Famous from bihar (also my place) is so good I can't stop yapping about it !!"</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="container mx-auto px-4 py-12 text-center old-style-border mt-6 mb-10">
-      <h3 class="text-4xl font-bold text-red-600 mb-4">About Me</h3>
-      <p class="text-lg">Gaming Being More than a hobby to me. It's my passion !!</p>
-      <img src="Gay man.jpg"
-        alt="Viraj"
-        class="mx-auto rounded shadow-lg w-50 h-60 object-cover border-4 border-cyan-300 mt-4"
-      />
-      <div class="mt-6 text-4xl font-bold text-yellow-300 tracking-wide">
-       Hours Played: <span id="hoursCounter">0</span>+
-      </div>
-    </section>
+      <section id="about" class="mb-10">
+        <h2 class="text-6xl font-bold mb-6">About Me</h2>
+        <div class="bg-blue-900 p-4 rounded-lg shadow">
+        <p class="mb-3"><b>Yo I'm Viraj !! And this website shows all the love that I have for food !!</b></p>
+        <p class="text">According to me food is more than just food to me !! It is the best thing that happens to me in a day. <br>
+          Whenever I'm feeling down I jut go and grab a good meal and boom the sadness vanishes like it was never there !!</p>
+        </div>
+      </section>
 
-<section id="faq" class="container mx-auto px-4 py-12 text-center old-style-border mt-6 mb-10">
-  <h3 class="text-4xl font-bold text-red-600 mb-6">Frequently Asked Questions</h3>
+      <section id="faq" class="container mx-auto px-4 py-12 text-center old-style-border mt-6 mb-10">
+  <h3 class="text-4xl font-bold text-white-600 mb-6">Frequently Asked Questions</h3>
   <div class="space-y-4 max-w-2xl mx-auto text-left">
     
     <div class="border border-yellow-500 rounded">
-      <button class="w-full text-left px-4 py-3 font-semibold bg-green-800 text-yellow-300 focus:outline-none toggle-faq">
-        What platform do you play games on?
+      <button class="w-full text-left px-4 py-3 font-semibold bg-purple-800 text-yellow-300 focus:outline-none toggle-faq">
+        What are your go-to snacks?
       </button>
-      <div class="hidden px-4 py-3 bg-green-900 text-blue-100">
-        I only have a laptop, soooo it answers I guess !! 🥲
+      <div class="hidden px-4 py-3 bg-purple-900 text-white-600">
+        That's a secret but "Haldiram's Bhujia" is the one !!
       </div>
     </div>
 
     <div class="border border-yellow-500 rounded">
-      <button class="w-full text-left px-4 py-3 font-semibold bg-green-800 text-yellow-300 focus:outline-none toggle-faq">
-        Which game is your all-time favorite?
+      <button class="w-full text-left px-4 py-3 font-semibold bg-purple-800 text-yellow-300 focus:outline-none toggle-faq">
+        Which is your favorite restaurant?
       </button>
-      <div class="hidden px-4 py-3 bg-green-900 text-blue-100">
-        Valorant !! Obv !!
+      <div class="hidden px-4 py-3 bg-purple-900 text-white-600">
+        Street food is the best !! Nothing comes even close to that !!
       </div>
     </div>
 
     <div class="border border-yellow-500 rounded">
-      <button class="w-full text-left px-4 py-3 font-semibold bg-green-800 text-yellow-300 focus:outline-none toggle-faq">
-        Are you planning to get a console ?
+      <button class="w-full text-left px-4 py-3 font-semibold bg-purple-800 text-yellow-300 focus:outline-none toggle-faq">
+        Are you planning to do something in the food section ?
       </button>
-      <div class="hidden px-4 py-3 bg-green-900 text-blue-100">
-        Just out of budget, but I will get it soon !! 🥲
+      <div class="hidden px-4 py-3 bg-purple-900 text-white-600">
+        Being delusional about starting a restaurant maybe !!
       </div>
     </div>
 
   </div>
 </section>
 
-       <footer class="bg-black p-4 text-center text-sm text-lime-300 old-style-border w-full">
-      <p>&copy; 2025 Viraj | All rights reserved</p>
+<button id="backToTop"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        class="hidden fixed bottom-4 right-4 bg-yellow-500 text-black px-5 py-2 rounded shadow-lg hover:bg-yellow-400 transition duration-300 ease-in-out">
+  ↑ Top
+</button>
+
+</main>
+
+    <footer class="bg-red-800 shadow-inner mt-auto">
+      <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gra-400 text-sm">
+        Ending bruh !! Go away now !!
+      </div>
     </footer>
 
-<script>
-  const btn = document.getElementById('backToTop');
+    <script>
+      document.querySelectorAll('.toggle-faq').forEach(button => {
+        button.addEventListener('click', () => {
+          const answer = button.nextElementSibling;
+          answer.classList.toggle('hidden');
+        });
+      });
+      const btn = document.getElementById('backToTop');
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
@@ -161,40 +185,6 @@
       btn.classList.add('hidden');
     }
   });
-  document.querySelectorAll('.toggle-faq').forEach(button => {
-    button.addEventListener('click', () => {
-      const answer = button.nextElementSibling;
-      answer.classList.toggle('hidden');
-    });
-  });
-  function animateCounter(id, target, duration = 2000) {
-    const el = document.getElementById(id);
-    let start = 0;
-    const increment = target / (duration / 16);
-
-    function update() {
-      start += increment;
-      if (start < target) {
-        el.textContent = Math.floor(start);
-        requestAnimationFrame(update);
-      } else {
-        el.textContent = target;
-      }
-    }
-    update();
-  }
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounter('hoursCounter', 400);
-        observer.disconnect();
-      }
-    });
-  });
-
-  observer.observe(document.getElementById('hoursCounter'));
-</script>
-
-</body>
+    </script>
+  </body>
 </html>
